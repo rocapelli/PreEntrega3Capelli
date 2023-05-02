@@ -1,0 +1,56 @@
+/*inicio sinopsis*/
+
+.sinopsis{
+    background-image: url(../img/pat_iridescent.jpg);
+    height: 70rem;
+    &__contenedor{
+        height: 50rem;
+        display: flex;
+        align-items: center;}
+    &__imagen{
+        height: $altoImagen;
+        width: $anchoImagen;
+        padding: 0.5rem;
+        border: solid 0.2rem $blanco;
+        margin: 0rem 5rem 0rem 5rem;}
+    &__anchor{
+        height: $altoImagen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 3rem;
+        border: 0.5rem double $azulOscuro;
+        margin: 0rem 5rem 0rem 5rem;
+        color: $azulOscuro;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
+        line-height: 2rem;
+        background-color: $blanco;}
+    &__titulo{
+        margin-bottom: 3rem;
+        font-size: 1.6rem;}
+    &__sinopsis{
+        font-size: 1.3rem;
+        text-align: justify;}
+    &__botonAncla{
+        display: flex;
+        justify-content: center;
+    text-decoration: none;}
+    &__boton{
+        padding: $paddingBoton;
+        border: $bordeBoton;
+        border-radius: $radioBorde;
+        background-color: $blanco;
+        color: $azulOscuro;
+        font-weight: 700;
+        transition: all 1s;
+        &:hover{
+            background-color: $verde;
+            color: $azulOscuro;
+            font-weight: 700;}
+    }
+}
+
+/*fin sinopsis*/

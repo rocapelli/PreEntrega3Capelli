@@ -1,0 +1,50 @@
+/*inicio mi cuenta*/
+
+.mainMiCuenta{
+    padding: 1.5rem;
+    background-image: url(../img/pat_moroccan_flower.jpg);
+    display: flex;
+    justify-content: center;
+    &__form{
+        padding: 3rem;}
+    &__fieldset{
+        padding: 3rem 5rem;
+        background-color: $blanco;
+        text-align: center;
+        line-height: 3.5rem;}
+    &__leyendaFormato{
+        font-size: $titulo;
+        color: $azulClaro;}
+    &__contenedor{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 2rem;
+        color: $azulClaro;}
+    &__submit{
+        padding: $paddingBoton;
+        margin: 2rem;
+        border: $bordeBoton;
+        border-radius: $radioBorde;
+        background-color: $azulOscuro;
+        color: $blanco;
+        font-weight: 700;
+        transition: all 1s;
+        &:hover{
+            background-color: $verde;
+            color: $azulOscuro;
+            font-weight: 700;}
+    }
+    &__texto{
+        font-size: 1.8rem;
+        margin: 2rem;
+        color: $azulClaro;}
+    &__ancla{
+        text-decoration: underline;
+        color: $azulClaro;}
+    &__strong{
+        font-weight: 700;}
+}
+
+/*fin mi cuenta*/

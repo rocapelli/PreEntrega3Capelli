@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="CINE, ENTRADA, PELICULA, FORMATO, IDIOMA, DIA, HORA, SELECCIONA, COMPLEJOS">
+    <meta name="description" content="Adquirir entradas.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo_cinema_paradiso.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../sass/origen.css">
+    <title>BOLETERIA</title>
+</head>
+<body>
+    
+    <div class="contenedorUniversal">
+        <header class="header">
+            <a href="../index.html" class="header__logoContenedor">
+                <img src="../img/banner_cinema_paradiso_mobile.png" alt="LOGO DEL CINE" class="header__logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__lista">
+                    <li class="header__item">
+                        <a class="header__ancla" href="../index.html">CARTELERA</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla header__ancla--activo" href="./boleteria.html">BOLETERÍA</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./proximamente.html">PRÓXIMAMENTE</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./mi_cuenta.html">MI CUENTA</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="mainBoleteria">
+            <form id="formulario" class="mainBoleteria__form" action="#" method="GET" enctype="multipart/form-data">
+                <fieldset class="mainBoleteria__fieldset">
+                    <legend class="mainBoleteria__leyenda"><strong class="mainBoleteria__titulo">SELECCIONA TU ENTRADA</strong></legend>
+                    <div id="mensajes"></div>
+                    <section class="mainBoleteria__section">
+                        <div class="mainBoleteria__contenedorSelecciones">
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__cine" for="cine">CINE:</label>
+                                <select id="cines" class="mainBoleteria__cineSelect" name="cine">
+                                    <option class="mainBoleteria__cineOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__pelicula" for="pelicula">PELÍCULA:</label>
+                                <select id="peliculas" class="mainBoleteria__peliculaSelect" name="pelicula">
+                                    <option class="mainBoleteria__peliculaOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__formato" for="formato">FORMATO:</label>
+                                <select id="formatos" class="mainBoleteria__formatoSelect" name="formato">
+                                    <option class="mainBoleteria__formatoOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__idioma" for="idioma">IDIOMA:</label>
+                                <select id="idiomas" class="mainBoleteria__idiomaSelect" name="idioma">
+                                    <option class="mainBoleteria__idiomaOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__dia" for="dia">DÍA:</label>
+                                <select id="dias" class="mainBoleteria__diaSelect" name="dia">
+                                    <option class="mainBoleteria__diaOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__hora" for="hora">HORA:</label>
+                                <select id="horas" class="mainBoleteria__horaSelect" name="hora">
+                                    <option class="mainBoleteria__horaOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__cantidad" for="cantidad">CANTIDAD:</label>
+                                <select id="entradas" class="mainBoleteria__cantidadSelect" name="cantidad">
+                                    <option class="mainBoleteria__cantidadOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                            <div class="mainBoleteria__contenedor">
+                                <label class="mainBoleteria__pago" for="pago">PAGO:</label>
+                                <select id="pagos" class="mainBoleteria__pagoSelect" name="pago">
+                                    <option class="mainBoleteria__pagoOpcion" label="Selecciona una opción"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mainBoleteria__botones">
+                            <input class="mainBoleteria__submit" type="submit" value="COMPRAR">
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+            <section>
+                <h3 class="mt-3">COMPRAS REALIZADAS:</h3>
+                <table class="table table-success table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">N° COMPRA</th>
+                        <th scope="col">CINE</th>
+                        <th scope="col">PELICULA</th>
+                        <th scope="col">FORMATO</th>
+                        <th scope="col">IDIOMA</th>
+                        <th scope="col">DIA</th>
+                        <th scope="col">HORA</th>
+                        <th scope="col">ENTRADAS</th>
+                        <th scope="col">IMPORTE</th>
+                    </tr>
+                    </thead>
+                    <tbody id="compraTabla">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    
+        <footer class="footer">
+            <div class="footer__columnaUno">
+                <h4 class="footer__tituloColumnaUno">COMPLEJOS</h4>
+                <ul class="footer_lista">
+                    <li class="footer__item">BELGRANO</li>
+                    <li class="footer__item">PALERMO</li>   
+                    <li class="footer__item">RECOLETA</li>
+                </ul>
+            </div>
+            <div class="footer__columnaDos">
+                <a class="footer__logoAncla" href="../index.html">
+                    <img class="footer__logo" src="../img/logo_cinema_paradiso.png" alt="LOGO DEL CINE">
+                </a>
+            </div>
+            <div class="footer__columnaTres">
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/facebook.svg" alt="Logo Facebook"></img>
+                </a>
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/twitter.svg" alt="Logo Twitter">
+                </a>
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/instagram.svg" alt="Logo Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../classes/cine.js"></script>
+    <script src="../classes/pelicula.js"></script>
+    <script src="../classes/formato.js"></script>
+    <script src="../classes/idioma.js"></script>
+    <script src="../classes/dia.js"></script>
+    <script src="../classes/hora.js"></script>
+    <script src="../classes/entrada.js"></script>
+    <script src="../classes/pago.js"></script>
+    <script src="../classes/compra.js"></script>
+    <script src="../js/main-boleteria.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

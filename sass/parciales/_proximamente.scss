@@ -1,0 +1,37 @@
+/*inicio próximamente*/
+
+.mainProximamente{
+    padding: 1.5rem;
+    background-image: url(../img/pat_moroccan_flower.jpg);
+    &__contenedor{
+        display: flex;
+        align-items: center;
+        padding: 1rem 7rem;
+        border: 0.5rem double $azulClaro;
+        margin: 5rem 5rem;
+        background-color: $blanco;
+        transition: all 3s;
+        &:hover{
+            background-color: $azulClaro;
+            border: 0.5rem double $blanco;}
+    }
+    &__imagen{
+        height: $altoImagenProx;
+        width: $anchoImagenProx;
+        padding: 0.5rem 2rem;
+        margin: 1.5rem;}
+    &__sinopsis{
+        font-size: 1.3rem;
+        text-align: justify;
+        color: $azulOscuro;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+        word-spacing: 0.5rem;
+        line-height: 4rem;
+        transition: all 3s;
+        &:hover{
+            color: $blanco;}
+    }
+}
+
+/*fin próximamente*/

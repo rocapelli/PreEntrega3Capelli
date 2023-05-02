@@ -1,0 +1,35 @@
+/*incio footer*/
+
+.footer{
+    background-color: $azulOscuro;
+    color: $blanco;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__columnaUno{
+        padding: 1rem;
+        & .footer__item{
+            list-style: none;
+            font-size: 1rem;
+            padding: 0.2rem;}
+    }
+    &__tituloColumnaUno{
+        padding: 0.2rem;
+        font-size: 1.2rem;}
+    &__columnaDos .footer__logo{
+        width: 8rem;
+        height: 8rem;
+        margin: 1rem;}
+    &__columnaTres .footer__redSocial{
+        font-size: 2.8rem;
+        width: 3rem;
+        height: 3rem;
+        background-color: $blanco;
+        color: $blanco;
+        border-radius: 50%;
+        padding: 0.8rem;
+        margin: 0.5rem;}
+}
+
+/*fin footer*/

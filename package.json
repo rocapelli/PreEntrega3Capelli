@@ -1,0 +1,21 @@
+{
+  "name": "cinemaparadiso",
+  "version": "1.0.0",
+  "description": "Un paquete de node para compilar SCSS a CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/origen.scss css/compilado.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocapelli/cinema_paradiso.git"
+  },
+  "author": "Rocío Capelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocapelli/cinema_paradiso/issues"
+  },
+  "homepage": "https://github.com/rocapelli/cinema_paradiso#readme"
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="CINE, COMPLEJOS, CONTACTANOS, EMAIL, NOMBRE, MENSAJE, COMENTARIO, SUGERENCIA">
+    <meta name="description" content="Contactanos ante cualquier duda.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo_cinema_paradiso.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/compilado.css">
+    <title>CONTACTO</title>
+</head>
+<body>
+    
+    <div class="contenedorUniversal">
+        <header class="header">
+            <a href="../index.html" class="header__logoContenedor">
+                <img src="../img/banner_cinema_paradiso_mobile.png" alt="LOGO DEL CINE" class="header__logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__lista">
+                    <li class="header__item">
+                        <a class="header__ancla" href="../index.html">CARTELERA</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./boleteria.html">BOLETERÍA</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./proximamente.html">PRÓXIMAMENTE</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla header__ancla--activo" href="./contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__ancla" href="./mi_cuenta.html">MI CUENTA</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="mainContacto">
+            <form class="mainContacto__form" action="#" method="GET" enctype="multipart/form-data">
+                <fieldset class="mainContacto__fieldset">
+                    <legend class="mainContacto__leyenda"><strong class="mainContacto__leyendaFormato">CONTACTANOS</strong></legend>
+                    <h4 class="mainContacto__titulo">Si tienes alguna duda, comentario o sugerencia, puedes contactarnos y nos comunicaremos contigo lo antes posible.</h4>
+                    <div class="mainContacto__contenedor">
+                        <label class="mainContacto__nombre" for="name">Nombre:</label>
+                        <input class="mainContacto__nombreInput" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="mainContacto__contenedor">
+                        <label class="mainContacto__email" for="email">Email:</label>
+                        <input class="mainContacto__emailInput" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="mainContacto__contenedor">
+                        <label class="mainContacto__genero" for="gender">Género:</label>
+                        <select class="mainContacto__generoSelect" name="gender" id="gender">
+                            <option class="mainContacto_generoFemenino" value="Female" label="Mujer"></option>
+                            <option class="mainContacto__generoMasculino" value="Male" label="Hombre"></option>
+                        </select>
+                    </div>
+                    <div class="mainContacto__contenedor">
+                        <strong class="mainContacto__textoFormato">Desea recibir las novedades por email?</strong>
+                        <label class="mainContacto__si" for="yes">Si</label>
+                        <input class="mainContacto__siCheckbox" type="checkbox" name="yes" id="yes">
+                    </div>
+                    <div class="mainContacto__contenedor">
+                        <label class="mainContacto__textarea" for="textarea">Mensaje:</label>
+                        <input class="mainContacto__textareaInput" type="text" name="textarea" id="textarea" required>
+                    </div>
+                    <div class="mainContacto__botones">
+                        <input class="mainContacto__reset" type="reset" value="BORRAR">
+                        <input class="mainContacto__submit" type="submit" value="ENVIAR">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer class="footer">
+            <div class="footer__columnaUno">
+                <h4 class="footer__tituloColumnaUno">COMPLEJOS</h4>
+                <ul class="footer_lista">
+                    <li class="footer__item">BELGRANO</li>
+                    <li class="footer__item">PALERMO</li>   
+                    <li class="footer__item">RECOLETA</li>
+                </ul>
+            </div>
+            <div class="footer__columnaDos">
+                <a class="footer__logoAncla" href="../index.html">
+                    <img class="footer__logo" src="../img/logo_cinema_paradiso.png" alt="LOGO DEL CINE">
+                </a>
+            </div>
+            <div class="footer__columnaTres">
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/facebook.svg" alt="Logo Facebook"></img>
+                </a>
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/twitter.svg" alt="Logo Twitter">
+                </a>
+                <a href="#" class="footer__ancla">
+                    <img class="footer__redSocial" src="../img/instagram.svg" alt="Logo Instagram">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

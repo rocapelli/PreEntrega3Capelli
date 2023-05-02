@@ -1,0 +1,19 @@
+/*inicio reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorUniversal{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*fin reset*/

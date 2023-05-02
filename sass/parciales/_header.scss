@@ -1,0 +1,33 @@
+/*inicio header*/
+
+.header{
+    background-color: $azulOscuro;
+    color: $blanco;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        max-width: 40rem;}
+    &__item{
+        display: inline-block;
+        padding: 0.3rem;
+        margin: 0.3rem;
+        font-weight: 400;}
+    &__ancla{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        transition: all 0s;
+        &--activo{
+            background-color: $blanco;
+            color: $azulOscuro;
+            font-weight: 700;}
+        &:hover{
+            text-decoration: underline;
+            font-weight: 700;}
+    }
+}
+
+/*fin header*/

@@ -1,0 +1,51 @@
+/*inicio index*/
+
+.mainIndex{
+    padding: 1rem;
+    background-image: url(../img/pat_moroccan_flower.jpg);
+    &__seccion{
+        display: flex;
+        justify-content: space-evenly;}
+    &__contenedor{
+        position: relative;}
+    &__sinopsisEtiqueta{
+        display: inline;
+        padding: 0.2rem 0.5rem;
+        margin: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        background-color: $azulOscuro;
+        color: $blanco;
+        position: absolute;
+        bottom: 0;
+        right: 0;}
+    &__imagen{
+        height: $altoImagen;
+        width: $anchoImagen;
+        padding: 0.5rem;
+        border: solid 0.1rem $azulClaro;
+        margin: 0.5rem;}
+    &__contenedorSinopsis{
+        display: flex;
+        align-items: center;
+        padding: 1rem 6rem;
+        border: 0.5rem double $azulOscuro;
+        margin: 5rem 7rem;
+        font-size: 1.3rem;
+        color: $azulOscuro;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+        word-spacing: 0.5rem;
+        line-height: 3rem;
+        background-color: $blanco;
+        & h4{
+            display: grid;
+            grid-template-columns: 15rem auto;}
+    }
+    &__sinopsis{
+        padding-left: 6rem;
+        text-align: justify;}
+}
+
+/*fin index*/
